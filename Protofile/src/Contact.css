@@ -1,0 +1,11 @@
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 3px solid orange !important;
+}
+
+.form-control {
+  border-color: rgb(243, 158, 0) !important;
+}

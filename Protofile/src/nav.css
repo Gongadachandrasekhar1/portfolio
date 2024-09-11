@@ -1,0 +1,22 @@
+.nav-link {
+  color: orange;
+  &:hover {
+    text-decoration: overline #f8eded !important;
+    padding-bottom: 0.5rem;
+    color: #f8eded;
+  }
+}
+
+.navbar-toggler {
+  background-color: orange !important;
+}
+
+.navbar-brand {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  background: linear-gradient(to left, orange, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
