@@ -1,0 +1,10 @@
+.About {
+  max-width: 100% !important;
+  /* min-height: 50vh !important; */
+}
+
+.text-about {
+  margin: 5rem !important;
+  line-height: 2rem !important;
+  color: #e6d9a2;
+}

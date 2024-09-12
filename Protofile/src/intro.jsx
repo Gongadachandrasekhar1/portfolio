@@ -5,30 +5,40 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import NavBar from "./Nav";
+import About from "./about";
+import Skills from "./Skills";
+import Contact from "./ContactMe";
+import Projects from "./Projects";
 import Footer from "./footer";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Services from "../pages/services/services";
 
 export default function () {
   const downloadResume = () => {
     saveAs(resumePDF, "ChandraResume.pdf");
   };
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   return (
     <div>
       <NavBar />
       <div className="Poster">
-        <div className="text text-center m-4">
-          <p className="name fs-1 fw-bold text-wrap ">
+        <div className="textme text-center m-5">
+          <p className="name fs-1 fw-bold text-wrap " data-aos="fade-down">
             HI! I'm
-            <span className="text-light animate"> Full Satck developer</span>
+            <span className="text-main animate"> Full Satck developer</span>
           </p>
-          <span className="text-wrap row">
-            I seeking for the opportunityI seeking for the opportunityI seeking
-            for the opportunityI seeking for the opportunityI seeking for the
-            opportunityI seeking for the opportunityI seeking for the
-            opportunity
+          <span className="text-wrap row" data-aos="fade-left">
+            Building Bridges Between Front-End and Back-End, Transforming Ideas
+            into Web Reality
           </span>
           <button
-            className="btn btn-dark mt-3 shadow"
+            className="btn mt-3"
+            data-aos="fade-right"
             onClick={downloadResume}
             type="button"
           >
@@ -36,32 +46,46 @@ export default function () {
           </button>
         </div>
         <div className="img-fluid d-flex justify-content-evenly align-items-center">
-          <img src="chanduimg.png" />
-          <div className="col-1 ms-5">
+          <img src="chanduimg.png" data-aos="fade-right" />
+          <div className="col-1 ms-5" data-aos="fade-right">
             <a
               href="https://www.linkedin.com/in/chandra-sekhar-gongada-80b8b0243/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedInIcon className="icons row-1 ms-1 mb-5" />
+              <LinkedInIcon
+                className="icons row-1 ms-1 mb-5 "
+                data-aos="fade-up"
+              />
             </a>
             <a
               href="https://github.com/Gongadachandrasekhar1"
               target="_blank" // Opens the link in a new tab
               rel="noopener noreferrer" // For security purposes
             >
-              <GitHubIcon className="icons row-1 ms-1 mb-5" />
+              <GitHubIcon
+                className="icons row-1 ms-1 mb-5"
+                data-aos="fade-right"
+              />
             </a>
             <a
               href="https://www.instagram.com/chandu__0625/"
               target="_blank" // Opens the link in a new tab
               rel="noopener noreferrer" // For security purposes
             >
-              <InstagramIcon className="icons row-1 ms-1 mb-5" />
+              <InstagramIcon
+                className="icons row-1 ms-1 mb-5"
+                data-aos="fade-down"
+              />
             </a>
           </div>
         </div>
       </div>
+      <About />
+      <Skills />
+      <Services />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );

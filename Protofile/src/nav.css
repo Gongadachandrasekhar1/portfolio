@@ -1,22 +1,25 @@
 .nav-link {
-  color: orange;
+  color: #f86fbd;
   &:hover {
-    text-decoration: overline #f8eded !important;
+    text-decoration: overline #e6d9a2 !important;
     padding-bottom: 0.5rem;
-    color: #f8eded;
+    color: #e6d9a2;
   }
 }
 
+.navbar {
+  background-color: #624e88;
+}
+
 .navbar-toggler {
-  background-color: orange !important;
+  background-color: #f86fbd !important;
 }
 
 .navbar-brand {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+  /* font-style: normal; */
   font-size: 1.5rem;
-  background: linear-gradient(to left, orange, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: #e6d9a2; */
+  color: #e6d9a2;
 }

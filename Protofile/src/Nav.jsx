@@ -3,9 +3,9 @@ import "./nav.css";
 
 export default function NavBar() {
   return (
-    <nav className="navbar navbar-expand-md bg-dark sticky-top">
+    <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container-fluid">
-        <Link className="navbar-brand mb-0 h1 ms-5" to="/">
+        <Link className="navbar-brand mb-0  ms-5" to="/">
           Chandra Sekhar
         </Link>
         <button

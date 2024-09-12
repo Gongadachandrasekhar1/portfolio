@@ -1,13 +1,20 @@
 import "./Contact.css";
 import NavBar from "./Nav";
 import Footer from "./footer";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Form() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div>
-      <NavBar />
-      <div className="container mt-5" id="contactMe">
-        <h1 className="text-center">Contact Me</h1>
+      <div className="container mt-5" data-aos="fade-down" id="contactMe">
+        <h1 className="text-center text-main" data-aos="fade-down">
+          Contact Me
+        </h1>
         <form>
           <div className="forms row p-3 mt-5 mb-5 ">
             <div className="firstName form-floating mb-3 col-6">
@@ -66,10 +73,10 @@ export default function Form() {
                 Comment
               </label>
             </div>
+            <button className="btn  col-2 mt-3">Submit</button>
           </div>
         </form>
       </div>
-      <Footer />
     </div>
   );
 }

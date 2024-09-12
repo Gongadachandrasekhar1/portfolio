@@ -2,6 +2,9 @@ import { useState } from "react";
 import "./Project.css";
 import NavBar from "./Nav";
 import Footer from "./footer";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Projects() {
   // Replace initialState with your default state or data
@@ -32,16 +35,22 @@ export default function Projects() {
     },
   ]);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div>
-      <NavBar />
-      <div className="container project mt-5" id="projects">
-        <h1 className="text-center">Projects</h1>
-        <div className="row d-flex justify-content-center align-items-center gap-3">
+      <div className="container project mt-5 mb-3" id="projects">
+        <h1 className="text-center text-main" data-aos="fade-down">
+          Projects
+        </h1>
+        <div className="row d-flex justify-content-center align-items-center gap-3 ">
           {state.map((project) => (
             <div
               key={project.id}
-              className="card shadow mt-5 col-md-4"
+              className="card shadow bg-transparent mt-5 col-md-4"
+              data-aos="fade-up"
               style={{ width: "20rem" }}
             >
               <img
@@ -65,7 +74,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

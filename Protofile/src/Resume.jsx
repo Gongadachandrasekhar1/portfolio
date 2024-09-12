@@ -1,15 +1,23 @@
 import "./Resume.css";
-import NavBar from "./Nav";
-import Footer from "./footer";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Resume() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div>
-      <NavBar />
       <div className="mt-5" id="resume">
-        <h1 className="text-center">RESUME</h1>
-        <div className="container Resume mt-5 ">
-          <div className="resume-header text-center text-wrap pt-4">
+        <h1 className="text-center text-main" data-aos="fade-down">
+          RESUME
+        </h1>
+        <div className="container Resume mt-5 " data-aos="fade-down">
+          <div
+            className="resume-header text-center text-wrap pt-4"
+            data-aos="fade-down"
+          >
             <h1>Chandra Sekhar Gongada</h1>
             <p>
               Parvathi Puram, Andhra Pradesh, 532501 | 7893399798 |
@@ -31,7 +39,7 @@ export default function Resume() {
             </p>
           </div>
           <hr />
-          <div className="main-container ms-2">
+          <div className="main-container ms-2" data-aos="fade-left">
             <div className="education">
               <h2>Education</h2>
               <ul>
@@ -51,7 +59,7 @@ export default function Resume() {
             </div>
             <hr />
 
-            <div className="skills">
+            <div className="skills" data-aos="fade-down">
               <h2>Skills</h2>
               <div className="row">
                 <div className="col-md-6">
@@ -110,7 +118,7 @@ export default function Resume() {
               </div>
             </div>
             <hr />
-            <div className="projects ">
+            <div className="projects " data-aos="fade-up">
               <h2>Projects</h2>
               <div>
                 <h4>Campus Connect Application</h4>
@@ -166,7 +174,7 @@ export default function Resume() {
             </div>
             <hr />
 
-            <div className="certificates">
+            <div className="certificates" data-aos="fade-up">
               <h2>Certificates</h2>
               <ul>
                 <li className="row">
@@ -183,7 +191,6 @@ export default function Resume() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
