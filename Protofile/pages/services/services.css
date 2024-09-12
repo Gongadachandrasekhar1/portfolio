@@ -1,0 +1,16 @@
+.services {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  &:hover {
+    border: 1px solid #e6d9a2;
+    transform: scale(1.05);
+  }
+}
+
+.card-body {
+  color: #e6d9a2;
+}
+
+.icon img {
+  color: #f86fbd;
+}

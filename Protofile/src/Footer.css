@@ -1,4 +1,9 @@
 .footer {
   width: auto !important;
   height: 10rem !important;
+  color: rgb(134, 137, 140);
+}
+
+.footer ul li a {
+  color: rgb(134, 137, 140);
 }

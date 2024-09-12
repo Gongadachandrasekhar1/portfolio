@@ -1,12 +1,11 @@
 .Poster {
-  width: 100vw !important;
-  min-height: 90vh !important;
+  width: 100% !important;
+  min-height: 80vh !important;
   display: flex !important;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  overflow: auto;
-  position: relative;
+  background-color: #524171 !important;
 }
 
 .icons {
@@ -31,10 +30,10 @@
 }
 
 .img-fluid img {
-  width: auto;
+  width: auto !important;
   height: 20rem;
   background-color: #fff important;
-  box-shadow: 10px 3px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.5);
   border-radius: 20% 10% 40% 10% !important;
   animation: animate 1s ease infinite !important;
 }

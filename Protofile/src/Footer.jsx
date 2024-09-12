@@ -4,22 +4,24 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 export default function Footer() {
   return (
-    <footer className="footer container-fluid bg-dark text-center text-light d-flex justify-content-evenly align-items-center flex-wrap">
-      <p>&copy;Copywrite</p>&nbsp;&nbsp;
-      <p>
-        <EmailIcon />
-        <a
-          className="text-decoration-none text-light"
-          href="mailto:gongadachandu770299@gmail.com"
-        >
-          gongadachandu770299@gmail.com
-        </a>
-      </p>
-      &nbsp;&nbsp;
-      <p>
-        <LocalPhoneIcon />
-        7893399798
-      </p>
+    <footer className="footer container-fluid bg-dark text-center  d-flex justify-content-evenly align-items-center flex-wrap">
+      <ul className="mt-3">
+        <li>&copy;Copywrite</li>&nbsp;&nbsp;
+        <li>
+          <EmailIcon />
+          <a
+            className="text-decoration-none "
+            href="mailto:gongadachandu770299@gmail.com"
+          >
+            gongadachandu770299@gmail.com
+          </a>
+        </li>
+        &nbsp;&nbsp;
+        <li>
+          <LocalPhoneIcon />
+          7893399798
+        </li>
+      </ul>
     </footer>
   );
 }

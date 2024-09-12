@@ -9,13 +9,16 @@ export default function About() {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div className="About mt-5" id="about">
+    <div
+      className="About d-flex justify-content-center align-items-center flex-wrap"
+      id="about"
+    >
       <h1 className="text-center text-main" data-aos="fade-down">
         About Me
       </h1>
-      <div className="main-content d-flex justify-content-evenly align-items-center flex-wrap  ">
+      <div className="main-content mt-5">
         <div className="text" data-aos="fade-up">
-          <p className="text text-wrap fs-5 text-about m-5">
+          <p className="text text-wrap fs-5 text-about">
             I’m a Full Stack Developer with a strong foundation in HTML, CSS,
             JavaScript, Bootstrap, SQL, MongoDB, Node.js, Express.js, ReactJS,
             and Python. I’m passionate about using these skills to develop

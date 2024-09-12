@@ -45,7 +45,7 @@ export default function () {
             Download CV
           </button>
         </div>
-        <div className="img-fluid d-flex justify-content-evenly align-items-center">
+        <div className="img-fluid d-flex justify-content-evenly align-items-center mb-5">
           <img src="chanduimg.png" data-aos="fade-right" />
           <div className="col-1 ms-5" data-aos="fade-right">
             <a
@@ -74,7 +74,7 @@ export default function () {
               rel="noopener noreferrer" // For security purposes
             >
               <InstagramIcon
-                className="icons row-1 ms-1 mb-5"
+                className="icons row-1 ms-1"
                 data-aos="fade-down"
               />
             </a>
@@ -85,7 +85,6 @@ export default function () {
       <Skills />
       <Services />
       <Projects />
-      <Contact />
       <Footer />
     </div>
   );
