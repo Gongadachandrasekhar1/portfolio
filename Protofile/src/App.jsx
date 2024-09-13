@@ -6,7 +6,7 @@ import About from "./about";
 import Skills from "./Skills";
 import Resume from "./Resume";
 import Contact from "./ContactMe";
-import Footer from "./footer";
+import Footer from "./Footer";
 import Projects from "./Projects";
 
 const routes = (
@@ -20,7 +20,7 @@ const routes = (
       <Route path="/projects" exact element={<Projects />} />
       <Route path="/ContactMe" exact element={<Contact />} />
       <Route path="/resume" exact element={<Resume />} />
-      <Route path="/footer" exact element={<Footer />} />
+      <Route path="/Footer" exact element={<Footer />} />
     </Routes>
   </Router>
 );
