@@ -4,6 +4,7 @@ import resumePDF from "./ChandraResume.pdf";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import DownloadIcon from "@mui/icons-material/Download";
 import NavBar from "./Nav";
 import About from "./about";
 import Skills from "./Skills";
@@ -41,7 +42,10 @@ export default function () {
             onClick={downloadResume}
             type="button"
           >
-            Download CV
+            Download CV{" "}
+            <span>
+              <DownloadIcon />
+            </span>
           </button>
         </div>
         <div className="img-fluid d-flex justify-content-evenly align-items-center mb-5">
