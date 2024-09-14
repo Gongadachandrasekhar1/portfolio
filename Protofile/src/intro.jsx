@@ -42,7 +42,7 @@ export default function () {
             onClick={downloadResume}
             type="button"
           >
-            Download CV{" "}
+            Resume{" "}
             <span>
               <DownloadIcon />
             </span>
