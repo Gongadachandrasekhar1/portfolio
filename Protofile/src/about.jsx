@@ -10,7 +10,7 @@ export default function About() {
   }, []);
   return (
     <div
-      className="About d-flex justify-content-center align-items-center flex-wrap"
+      className="About d-flex justify-content-center align-items-center flex-wrap mt-3"
       id="about"
     >
       <h1 className="text-center text-main" data-aos="fade-down">
