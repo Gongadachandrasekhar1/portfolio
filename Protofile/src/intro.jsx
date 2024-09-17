@@ -1,6 +1,6 @@
 import "./intro.css";
 import { saveAs } from "file-saver";
-import resumePDF from "./ChandraResume.pdf";
+import resumePDF from "./ChandraResumee.pdf";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -17,7 +17,7 @@ import Services from "../pages/services/services";
 
 export default function () {
   const downloadResume = () => {
-    saveAs(resumePDF, "ChandraResume.pdf");
+    saveAs(resumePDF, "ChandraResumee.pdf");
   };
   useEffect(() => {
     AOS.init({ duration: 2000 });
