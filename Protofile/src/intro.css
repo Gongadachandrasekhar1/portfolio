@@ -32,15 +32,14 @@
 .img-fluid img {
   width: auto !important;
   height: 20rem;
-  background-color: #fff important;
   box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.5);
-  border-radius: 20% 10% 40% 10% !important;
+  border-radius: 10% 10% 40% 10% !important;
   animation: animate 1s ease infinite !important;
 }
 
 @keyframes animate {
   0% {
-    transform: translatey(-2px);
+    transform: translate(0px);
   }
   50% {
     transform: translateY(2px);

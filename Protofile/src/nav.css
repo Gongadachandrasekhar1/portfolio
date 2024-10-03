@@ -18,8 +18,9 @@
 .navbar-brand {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 100;
-  /* font-style: normal; */
   font-size: 1.5rem;
-  /* background: #e6d9a2; */
   color: #e6d9a2;
+  &:hover {
+    transition: width 2s linear 1s #f86fbd;
+  }
 }
