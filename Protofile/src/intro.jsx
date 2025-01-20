@@ -17,7 +17,7 @@ import Services from "../pages/services/services";
 
 export default function () {
   const downloadResume = () => {
-    saveAs(resumePDF, "ChandraResumee.pdf");
+    saveAs(resumePDF, "CHANDRA SEKHAR GONGADA RESUME.pdf");
   };
   useEffect(() => {
     AOS.init({ duration: 2000 });
