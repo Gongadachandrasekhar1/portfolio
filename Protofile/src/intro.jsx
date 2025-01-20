@@ -1,6 +1,6 @@
 import "./intro.css";
 import { saveAs } from "file-saver";
-import resumePDF from "./ChandraResumee.pdf";
+import resumePDF from "./CHANDRA SEKHAR GONGADA RESUME.pdf";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
