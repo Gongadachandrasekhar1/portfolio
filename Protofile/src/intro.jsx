@@ -30,7 +30,7 @@ export default function () {
         <div className="textme text-center m-5">
           <p className="name fs-1 fw-bold text-wrap " data-aos="fade-down">
             HI! I'm
-            <span className="text-main animate"> Full Satck developer</span>
+            <span className="text-main animate"> Full Stack developer</span>
           </p>
           <span className="text-wrap row" data-aos="fade-left">
             Building Bridges Between Front-End and Back-End, Transforming Ideas
